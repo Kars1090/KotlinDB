@@ -1,0 +1,46 @@
+#root {
+    -fx-pref-height: 600;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#TopBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#BottomBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#TopLeftBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 400;
+    -fx-alignment: CENTER;
+}
+
+#TopRightBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 400;
+    -fx-alignment: CENTER;
+}
+
+#BottomLeftBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 400;
+    -fx-alignment: CENTER;
+}
+
+#BottomRightBox {
+    -fx-pref-height: 300;
+    -fx-pref-width: 400;
+    -fx-alignment: CENTER;
+}
+
+.MenuButton {
+    -fx-pref-height: 150;
+    -fx-pref-width: 200;
+}
