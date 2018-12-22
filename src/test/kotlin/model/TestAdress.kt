@@ -7,9 +7,9 @@ import org.junit.Test
 
 class TestAdress {
     private lateinit var adress: Adress
-    private val street = "Weg Naar Voorst"
-    private val number = 11
-    private val postalCode = "7205CK"
+    private val street = "Warnsveldseweg"
+    private val number = 60
+    private val postalCode = "7200JA"
     private val city = "Zutphen"
 
     @Before
