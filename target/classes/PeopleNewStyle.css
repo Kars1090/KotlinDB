@@ -9,7 +9,6 @@
     -fx-pref-width: 800;
     -fx-alignment: CENTER;
     -fx-font-size: 24;
-    -fx-font-style: bold;
 }
 
 #InfoBox {
@@ -17,17 +16,6 @@
     -fx-pref-width: 800;
     -fx-alignment: CENTER;
     -fx-spacing: 20;
-}
-
-.Button {
-    -fx-pref-height: 50;
-    -fx-pref-width: 200;
-}
-
-#AdressBox {
-    -fx-pref-height: 425;
-    -fx-pref-width: 800;
-    -fx-alignment: CENTER;
 }
 
 #FirstNameBox {
@@ -58,6 +46,34 @@
 
 #fieldEmail {
     -fx-pref-width: 100;
+}
+
+.Button {
+    -fx-pref-height: 50;
+    -fx-pref-width: 200;
+}
+
+#AdressBox {
+    -fx-pref-height: 375;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#StreetBox, #NumberBox, #AdditionBox {
+    -fx-alignment: CENTER;
+}
+
+#AdressFirstLineBox, #AdressSecondLineBox {
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+}
+
+#PostalCodeBox, #CityBox {
+    -fx-alignment: CENTER;
+}
+
+#BottomLeftBox, #BottomRightBox {
+    -fx-alignment: CENTER;
 }
 
 #BottomBox {

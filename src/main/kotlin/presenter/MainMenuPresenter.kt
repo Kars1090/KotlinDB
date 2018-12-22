@@ -1,6 +1,7 @@
 package presenter
 
 import tornadofx.*
+import util.Alerts
 import view.MainMenuView
 import view.PeopleMenuView
 
@@ -11,11 +12,11 @@ class MainMenuPresenter(val view: MainMenuView): Controller() {
     }
 
     fun manageOccupationsPressed() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Alerts.instance.showWarning("Warning","You clicked Occupations","Not Implemented!")
     }
 
     fun manageBusinessesPressed() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Alerts.instance.showWarning("Warning","You clicked Businesses","Not Implemented!")
     }
 
 }

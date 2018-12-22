@@ -1,5 +1,6 @@
 package view
 
+import javafx.scene.control.Button
 import presenter.PeopleNewPresenter
 import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
@@ -8,6 +9,8 @@ import tornadofx.*
 class PeopleNewView : View() {
     override val root = VBox()
     var presenter = PeopleNewPresenter(this)
+    lateinit var adressBox: VBox
+    lateinit var buttonAddAdress: Button
 
     init {
         importStylesheet("/PeopleNewStyle.css")
@@ -17,13 +20,20 @@ class PeopleNewView : View() {
                 text="Create new person"
             }
             setupInfoBox()
-            setupAdressBox()
+            adressBox = setupAdressBox()
+            adressBox.isVisible = false
+            buttonAddAdress = button {id="buttonAddAdress"
+                styleClass.add("Button")
+                text="Add adress information"
+                action { buttonAddAdressClicked() }
+            }
             setupBottomBox()
         }
     }
 
     fun showAdressFields() {
-
+        buttonAddAdress.isVisible = false
+        adressBox.isVisible = true
     }
 
     private fun buttonAddAdressClicked() {
@@ -41,26 +51,45 @@ class PeopleNewView : View() {
     private fun setupInfoBox(): HBox {
         return hbox { id="InfoBox"
             vbox { id="FirstNameBox"
-                label { text="First Name" }
+                label { text="First Name:" }
                 textfield { id="fieldFirstName" }
             }
             vbox { id="LastNameBox"
-                label { text="Last Name" }
+                label { text="Last Name:" }
                 textfield { id="fieldLastName" }
             }
             vbox { id="EmailBox"
-                label { text="E-mail adress" }
+                label { text="E-mail adress:" }
                 textfield { id="fieldEmail" }
             }
         }
     }
 
-    private fun setupAdressBox(): HBox {
-        return hbox {id="AdressBox"
-            button {id="buttonAddAdress"
-                styleClass.add("Button")
-                text="Add adress information"
-                action { buttonAddAdressClicked() }
+    private fun setupAdressBox(): VBox {
+        return vbox {id="AdressBox"
+            hbox { id="AdressFirstLineBox"
+                vbox { id = "StreetBox"
+                    label { text = "Street:" }
+                    textfield { id = "fieldStreet" }
+                }
+                vbox { id = "NumberBox"
+                    label { text = "Number:" }
+                    textfield { id = "fieldNumber" }
+                }
+                vbox { id = "AdditionBox"
+                    label { text = "Addition: (optional)" }
+                    textfield { id = "fieldAddition" }
+                }
+            }
+            hbox { id="AdressSecondLineBox"
+                vbox { id = "PostalCodeBox"
+                    label { text = "Postal Code:" }
+                    textfield { id = "fieldPostalCode" }
+                }
+                vbox { id = "CityBox"
+                    label { text = "City:" }
+                    textfield { id = "fieldCity" }
+                }
             }
         }
     }
@@ -77,7 +106,7 @@ class PeopleNewView : View() {
             }
             vbox { id = "BottomRightBox"
                 button {
-                    id = "buttonAdd"
+                    id = "buttonAddPerson"
                     styleClass.add("Button")
                     text = "Add new Person"
                     action { buttonAddPersonClicked() }
