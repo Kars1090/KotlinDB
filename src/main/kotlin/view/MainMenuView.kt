@@ -5,7 +5,7 @@ import javafx.scene.layout.VBox
 import presenter.MainMenuPresenter
 import tornadofx.*
 
-class MainMenuView : View() {
+class MainMenuView : View("Main Menu") {
     override val root = VBox()
     var presenter: MainMenuPresenter = MainMenuPresenter(this)
 
@@ -29,8 +29,8 @@ class MainMenuView : View() {
         presenter.manageBusinessesPressed()
     }
 
-    private fun setupTopBox() {
-        hbox {
+    private fun setupTopBox(): HBox {
+        return hbox {
             id = "TopBox"
             vbox {
                 id = "TopLeftBox"
