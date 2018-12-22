@@ -25,8 +25,8 @@ class PeopleMenuView: View() {
         presenter.findPersonPressed()
     }
 
-    private fun setupTopBox() {
-        hbox {
+    private fun setupTopBox(): HBox {
+        return hbox {
             id = "TopBox"
             vbox {
                 id = "TopLeftBox"

@@ -2,7 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b87bc0b-261f-46e2-9929-173d4e63bee2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/util/Alerts.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/view/TestPeopleNewView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presenter/MainMenuPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/presenter/MainMenuPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleNewPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleNewPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/PeopleNewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/PeopleNewView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PeopleNewStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PeopleNewStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/KotlinDB.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/KotlinDB.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PeopleNewStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PeopleNewStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Adress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Adress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/MainMenuPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/MainMenuPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/PeopleMenuPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/PeopleMenuPresenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupBottomBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView$setupTopBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MainMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MainMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupBottomBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView$setupTopBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupAdressBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupAdressBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupAdressBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupAdressBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupBottomBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView$setupInfoBox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/PeopleNewView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PeopleNewView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-model.TestPerson.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-model.TestPerson.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/model.TestPerson.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/model.TestPerson.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/view.TestMainMenuView.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/view.TestMainMenuView.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/KotlinDB.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/KotlinDB.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/TestAdress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/TestAdress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/TestPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/TestPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/view/TestMainMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/TestMainMenuView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/view/TestPeopleMenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/view/TestPeopleMenuView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,45 +92,50 @@
     <session id="2004689667">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="6" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="169" />
-          <entry key="kt" value="12692" />
+          <entry key="css" value="809" />
+          <entry key="kt" value="14855" />
           <entry key="xml" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="169" />
-          <entry key="Kotlin" value="12692" />
+          <entry key="CSS" value="809" />
+          <entry key="Kotlin" value="14855" />
           <entry key="XML" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MockMaker" value="3" />
-          <entry key="css" value="1" />
-          <entry key="kt" value="63" />
+          <entry key="css" value="5" />
+          <entry key="kt" value="79" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Kotlin" value="63" />
+          <entry key="CSS" value="5" />
+          <entry key="Kotlin" value="79" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.remote" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -70,41 +145,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/App.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/PeopleNewView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="34" />
               <folding>
-                <element signature="e#0#87#0" expanded="true" />
+                <element signature="e#14#167#0" expanded="true" />
+                <element signature="e#360#904#0" />
+                <element signature="n#!!block;n#setupInfoBox#0;n#!!block;n#PeopleNewView#0" />
+                <element signature="n#!!block;n#setupAdressBox#0;n#!!block;n#PeopleNewView#0" />
+                <element signature="n#!!block;n#setupBottomBox#0;n#!!block;n#PeopleNewView#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestPeopleMenuView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="68">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
-                <element signature="e#19#84#0" expanded="true" />
+                <element signature="e#14#233#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Person.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestMainMenuView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="76">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#14#231#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestPeopleNewView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="399">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+              <folding>
+                <element signature="e#14#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +210,7 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
+        <option value="TornadoFX Code View" />
         <option value="CSS File" />
         <option value="Kotlin Class" />
       </list>
@@ -132,6 +227,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -161,15 +261,21 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/presenter/MenuPresenter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/MenuStyle.css" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/view/MainMenuView.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/view/PeopleMenuView.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/view/TestPeopleMenuView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/model/Adress.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/model/Business.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/model/Person.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/model/TestPerson.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/view/PeopleMenuView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/view/MainMenuView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/view/PeopleNewView.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/PeopleNewStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/Alerts.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleNewPresenter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/presenter/MainMenuPresenter.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/view/TestPeopleNewView.kt" />
       </list>
     </option>
   </component>
@@ -197,7 +303,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,7 +336,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="presenter" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KotlinDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KotlinDB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KotlinDB" type="b2602c69:ProjectViewProjectNode" />
@@ -250,20 +364,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545491929408" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545505424374" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -290,32 +403,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TornadoFX.Application">
-    <configuration name="TestAdress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestPeopleNewView.testButtonAddPerson">
+    <configuration name="TestPeopleNewView.testButtonAddPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KotlinDB" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestAdress" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAdress.testToFormattedString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KotlinDB" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestAdress" />
-      <option name="METHOD_NAME" value="testToFormattedString" />
+      <option name="PACKAGE_NAME" value="view" />
+      <option name="MAIN_CLASS_NAME" value="view.TestPeopleNewView" />
+      <option name="METHOD_NAME" value="testButtonAddPerson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,25 +434,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPerson.testAddPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="App" live-views="false" live-stylesheets="false" dump-stylesheets="false">
+      <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="KotlinDB" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPerson" />
-      <option name="METHOD_NAME" value="testAddPhoneNumber" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="App" live-views="false" live-stylesheets="false" dump-stylesheets="false">
-      <option name="MAIN_CLASS_NAME" value="Application" />
+    <configuration name="PeopleMenuView" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="View" live-views="false" live-stylesheets="false" dump-stylesheets="false">
+      <option name="MAIN_CLASS_NAME" value="tornadofx.App" />
       <module name="KotlinDB" />
+      <option name="VIEW_CLASS_NAME" value="view.PeopleMenuView" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PeopleNewView" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="View" live-views="false" live-stylesheets="false" dump-stylesheets="false">
+      <option name="MAIN_CLASS_NAME" value="tornadofx.App" />
+      <module name="KotlinDB" />
+      <option name="VIEW_CLASS_NAME" value="view.PeopleNewView" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -376,17 +475,17 @@
       <item itemvalue="TornadoFX.Tornado" />
       <item itemvalue="TornadoFX.Application" />
       <item itemvalue="JUnit.TestPerson" />
-      <item itemvalue="JUnit.TestPerson.testAddPhoneNumber" />
-      <item itemvalue="JUnit.TestAdress" />
-      <item itemvalue="JUnit.TestAdress.testToFormattedString" />
+      <item itemvalue="TornadoFX.PeopleNewView" />
+      <item itemvalue="TornadoFX.PeopleMenuView" />
+      <item itemvalue="JUnit.TestPeopleNewView.testButtonAddPerson" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPeopleNewView.testButtonAddPerson" />
         <item itemvalue="TornadoFX.Application" />
+        <item itemvalue="TornadoFX.PeopleNewView" />
+        <item itemvalue="TornadoFX.PeopleMenuView" />
         <item itemvalue="JUnit.TestPerson" />
-        <item itemvalue="JUnit.TestAdress" />
-        <item itemvalue="JUnit.TestAdress.testToFormattedString" />
-        <item itemvalue="JUnit.TestPerson.testAddPhoneNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +510,9 @@
       <workItem from="1545382329287" duration="2685000" />
       <workItem from="1545385467325" duration="4623000" />
       <workItem from="1545406660658" duration="193000" />
-      <workItem from="1545483109430" duration="8908000" />
+      <workItem from="1545483109430" duration="9769000" />
+      <workItem from="1545493009460" duration="2300000" />
+      <workItem from="1545502751064" duration="2606000" />
     </task>
     <servers />
   </component>
@@ -448,13 +549,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45928000" />
+    <option name="totallyTimeSpent" value="51695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -470,12 +570,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5127932" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48720682" weight="0.32900432" />
       <window_info anchor="bottom" id="Tool Output" order="12" />
       <window_info anchor="bottom" id="ANTLR Preview" order="13" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,6 +584,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,96 +610,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/SecondView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#14#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/SecondPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/FirstPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/IPerson.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/FirstView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/presenter/TestFirstPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestFirstView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/MenuStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/MainMenuPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#19#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestPeopleMenuView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Adress.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestMainMenuView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/SecondView.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/SecondPresenter.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/FirstPresenter.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/IPerson.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/FirstView.kt" />
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/presenter/TestFirstPresenter.kt" />
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestFirstView.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Business.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -607,10 +624,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/model/TestPerson.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Person.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/MainMenuView.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="255">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="n#!!block;n#setupTopBox#0;n#!!block;n#MainMenuView#0" />
             <element signature="n#!!block;n#setupBottomBox#0;n#!!block;n#MainMenuView#0" />
@@ -618,20 +656,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/model/TestPerson.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MenuStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-          <folding>
-            <element signature="e#15#132#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-94">
+          <caret selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Adress.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PeopleNewStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/PeopleMenuView.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#14#133#0" expanded="true" />
             <element signature="n#!!block;n#setupTopBox#0;n#!!block;n#PeopleMenuView#0" />
@@ -640,37 +689,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/App.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/Alerts.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/PeopleNewPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#19#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/PeopleMenuPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding>
-            <element signature="e#19#84#0" expanded="true" />
+            <element signature="e#19#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/model/Person.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presenter/MainMenuPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/model/TestAdress.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/App.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="153">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestPeopleMenuView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#14#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestMainMenuView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#14#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/view/PeopleNewView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="e#14#167#0" expanded="true" />
+            <element signature="e#360#904#0" />
+            <element signature="n#!!block;n#setupInfoBox#0;n#!!block;n#PeopleNewView#0" />
+            <element signature="n#!!block;n#setupAdressBox#0;n#!!block;n#PeopleNewView#0" />
+            <element signature="n#!!block;n#setupBottomBox#0;n#!!block;n#PeopleNewView#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/view/TestPeopleNewView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#14#232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
