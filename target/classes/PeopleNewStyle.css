@@ -1,0 +1,68 @@
+#root {
+    -fx-pref-height: 600;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#Title {
+    -fx-pref-height: 50;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+    -fx-font-size: 24;
+    -fx-font-style: bold;
+}
+
+#InfoBox {
+    -fx-pref-height: 50;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+}
+
+.Button {
+    -fx-pref-height: 50;
+    -fx-pref-width: 200;
+}
+
+#AdressBox {
+    -fx-pref-height: 425;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+}
+
+#FirstNameBox {
+    -fx-pref-height: 50;
+    -fx-pref-width: 200;
+    -fx-alignment: CENTER;
+}
+
+#fieldFirstName {
+    -fx-pref-width: 100;
+}
+
+#LastNameBox {
+    -fx-pref-height: 50;
+    -fx-pref-width: 200;
+    -fx-alignment: CENTER;
+}
+
+#fieldLastName {
+    -fx-pref-width: 100;
+}
+
+#EmailBox {
+    -fx-pref-height: 50;
+    -fx-pref-width: 200;
+    -fx-alignment: CENTER;
+}
+
+#fieldEmail {
+    -fx-pref-width: 100;
+}
+
+#BottomBox {
+    -fx-pref-height: 75;
+    -fx-pref-width: 800;
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+}
