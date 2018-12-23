@@ -36,19 +36,29 @@ class PeopleNewPresenter(val view: PeopleNewView) : Controller() {
             try {
                 addressNumber = number.toInt()
             } catch (e: NumberFormatException) {
-                Alerts.instance.showError("Error", "You did something wrong", "Number field is numbers only")
+                Alerts.instance.showError("Error", "Wrongful address information", "Number field is numbers only")
                 return
             }
             val addressFactory = AddressFactory()
             var addressAddition: Char? = null
             if (addition != "") addressAddition = addition[0]
             val address = addressFactory.createAdress(street, addressNumber, postalCode, city, addressAddition)
+            if (address == null) {
+                Alerts.instance.showError("Error", "Wrongful address information", "Number must be between 1 and 1000. Postalcode must be 6 digits. Try again!")
+                return
+            }
             person = personFactory.createPerson(firstName, lastName, email, null, address)
         }
         println(person.getInfoString())
+        Alerts.instance.showInformation("Success!","Person added successfully!","Returning to menu.")
+        returnToPeopleMenuView()
     }
 
     fun backClicked() {
+        returnToPeopleMenuView()
+    }
+
+    private fun returnToPeopleMenuView() {
         view.replaceWith(PeopleMenuView())
     }
 
