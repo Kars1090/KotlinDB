@@ -10,7 +10,7 @@ abstract class AbstractDAO {
     protected val password = "killerfist"
     protected val database = "KotlinDB"
 
-    protected fun getConnection() {
+    protected fun openConnection() {
         val connectionProps = Properties()
         connectionProps.put("user", username)
         connectionProps.put("password", password)
@@ -27,6 +27,10 @@ abstract class AbstractDAO {
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
+    }
+
+    protected fun closeConnection() {
+        if (connection != null) connection!!.close()
     }
 
 }
