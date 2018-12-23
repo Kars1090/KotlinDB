@@ -22,7 +22,7 @@ class PeopleNewView : View() {
     private lateinit var fieldCity: TextField
 
     init {
-        importStylesheet("/PeopleNewStyle.css")
+        importStylesheet("/PeopleStyle.css")
         with (root) {
             id="root"
             label { id="Title"

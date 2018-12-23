@@ -7,8 +7,8 @@ import java.sql.SQLIntegrityConstraintViolationException
 
 class AddressDAO : AbstractDAO() {
 
-    fun getAll(): List<Address> {
-        openConnection()
+    fun findAll(): List<Address> {
+        val connection = openConnection()
         val list = mutableListOf<Address>()
         try {
             val sql = "SELECT * FROM Address"
@@ -32,7 +32,7 @@ class AddressDAO : AbstractDAO() {
     }
 
     fun getAddress(postalCode: String, number: Int): Address? {
-        openConnection()
+        val connection = openConnection()
         try {
             val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
                     "\" AND number =" + number
@@ -56,7 +56,7 @@ class AddressDAO : AbstractDAO() {
     }
 
     fun ifAddressExists(postalCode: String, number: Int): Boolean {
-        openConnection()
+        val connection = openConnection()
         try {
             val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
                     "\" AND number =" + number
@@ -67,15 +67,15 @@ class AddressDAO : AbstractDAO() {
             }
             return false
         } catch (e: SQLException) {
-            return false
             e.printStackTrace()
+            return false
         } finally {
             closeConnection()
         }
     }
 
     fun ifAddressExists(address: Address): Boolean {
-        openConnection()
+        val connection = openConnection()
         try {
             val sql = "SELECT * FROM Address WHERE postalCode = \"" + address.postalCode +
                     "\" AND number =" + address.number
@@ -86,15 +86,15 @@ class AddressDAO : AbstractDAO() {
             }
             return false
         } catch (e: SQLException) {
-            return false
             e.printStackTrace()
+            return false
         } finally {
             closeConnection()
         }
     }
 
     fun insertAddress(address: Address): Boolean {
-        openConnection()
+        val connection = openConnection()
         try {
             var sql = "INSERT INTO Address (street, number, postalCode, addition, city) VALUES (" +
                     "\"" + address.street +

@@ -54,7 +54,7 @@
 }
 
 #AddressBox {
-    -fx-pref-height: 375;
+    -fx-pref-height: 100;
     -fx-pref-width: 800;
     -fx-alignment: CENTER;
 }
@@ -72,8 +72,9 @@
     -fx-alignment: CENTER;
 }
 
-#BottomLeftBox, #BottomRightBox {
-    -fx-alignment: CENTER;
+#ResultTable {
+    -fx-pref-height: 275;
+    -fx-pref-width: 800;
 }
 
 #BottomBox {
@@ -81,4 +82,8 @@
     -fx-pref-width: 800;
     -fx-alignment: CENTER;
     -fx-spacing: 20;
+}
+
+#BottomLeftBox, #BottomRightBox {
+    -fx-alignment: CENTER;
 }

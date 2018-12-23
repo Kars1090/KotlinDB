@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="model.factory.TestPersonFactory" time="0.53" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="model.factory.TestPersonFactory" time="0.546" errors="0" skipped="0">
   <properties>
     <property name="idea.plugins.compatible.build" value="182.3040"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,5 +66,5 @@
   </properties>
   <testcase classname="model.factory.TestPersonFactory" name="testCreatePerson" time="0"/>
   <testcase classname="model.factory.TestPersonFactory" name="testCreatePersonPhoneNumber" time="0"/>
-  <testcase classname="model.factory.TestPersonFactory" name="testCreatePersonPhoneAndAdress" time="0.53"/>
+  <testcase classname="model.factory.TestPersonFactory" name="testCreatePersonPhoneAndAdress" time="0.546"/>
 </testsuite>
