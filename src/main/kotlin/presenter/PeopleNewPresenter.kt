@@ -1,5 +1,7 @@
 package presenter
 
+import dao.AddressDAO
+import dao.PersonDAO
 import model.Person
 import model.factory.AddressFactory
 import model.factory.PersonFactory
@@ -47,11 +49,14 @@ class PeopleNewPresenter(val view: PeopleNewView) : Controller() {
                 Alerts.instance.showError("Error", "Wrongful address information", "Number must be between 1 and 1000. Postalcode must be 6 digits. Try again!")
                 return
             }
+            if (!AddressDAO().insertAddress(address)) return
             person = personFactory.createPerson(firstName, lastName, email, null, address)
         }
         println(person.getInfoString())
-        Alerts.instance.showInformation("Success!","Person added successfully!","Returning to menu.")
-        returnToPeopleMenuView()
+        if (PersonDAO().insertPerson(person)) {
+            Alerts.instance.showInformation("Success!", "Person added successfully!", "Returning to menu.")
+            returnToPeopleMenuView()
+        }
     }
 
     fun backClicked() {

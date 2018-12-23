@@ -1,6 +1,7 @@
 package presenter
 
 import dao.AddressDAO
+import dao.PersonDAO
 import tornadofx.*
 import util.Alerts
 import view.PeopleMenuView
@@ -14,7 +15,8 @@ class PeopleMenuPresenter(val view: PeopleMenuView): Controller() {
 
     fun findPersonPressed() {
         Alerts.instance.showWarning("Warning","You clicked Find Person","Not Implemented!")
-        AddressDAO().getAll().forEach { println(it.toFormattedString()) }
+        AddressDAO().getAll().forEach { println(it.toFormattedString() + "\n") }
+        PersonDAO().getAll().forEach { println(it.getInfoString() + "\n") }
     }
 
 }

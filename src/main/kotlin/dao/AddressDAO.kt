@@ -1,6 +1,7 @@
 package dao
 
 import model.Address
+import model.factory.AddressFactory
 import java.sql.SQLException
 import java.sql.SQLIntegrityConstraintViolationException
 
@@ -12,14 +13,15 @@ class AddressDAO : AbstractDAO() {
         try {
             val sql = "SELECT * FROM Address"
             val result = connection!!.createStatement().executeQuery(sql)
+            val factory = AddressFactory()
             while (result.next()) {
-                val address = Address(
+                val address = factory.createAdress(
                         result.getString("street"),
                         result.getInt("number"),
                         result.getString("postalCode"),
                         result.getString("city"))
-                if (result.getString("addition") != null) address.addition = result.getString("addition")[0]
-                list.add(address)
+                if (result.getString("addition") != null) address!!.addition = result.getString("addition")[0]
+                list.add(address!!)
             }
         } catch (e: SQLException) {
             e.printStackTrace()
@@ -31,17 +33,18 @@ class AddressDAO : AbstractDAO() {
 
     fun getAddress(postalCode: String, number: Int): Address? {
         openConnection()
-        val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
-                "\" AND number =" + number
         try {
+            val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
+                    "\" AND number =" + number
             val result = connection!!.createStatement().executeQuery(sql)
+            val factory = AddressFactory()
             while (result.next()) {
-                val address = Address(
+                val address = factory.createAdress(
                         result.getString("street"),
                         result.getInt("number"),
                         result.getString("postalCode"),
                         result.getString("city"))
-                if (result.getString("addition") != null) address.addition = result.getString("addition")[0]
+                if (result.getString("addition") != null) address!!.addition = result.getString("addition")[0]
                 return address
             }
         } catch (e: SQLException) {
@@ -54,54 +57,59 @@ class AddressDAO : AbstractDAO() {
 
     fun ifAddressExists(postalCode: String, number: Int): Boolean {
         openConnection()
-        val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
-                "\" AND number =" + number
         try {
+            val sql = "SELECT * FROM Address WHERE postalCode = \"" + postalCode +
+                    "\" AND number =" + number
             val result = connection!!.createStatement().executeQuery(sql)
             closeConnection()
             while (result.next()) {
                 return true
             }
+            return false
         } catch (e: SQLException) {
+            return false
             e.printStackTrace()
         } finally {
             closeConnection()
         }
-        return false
     }
 
     fun ifAddressExists(address: Address): Boolean {
         openConnection()
-        val sql = "SELECT * FROM Address WHERE postalCode = \"" + address.postalCode +
-                "\" AND number =" + address.number
         try {
+            val sql = "SELECT * FROM Address WHERE postalCode = \"" + address.postalCode +
+                    "\" AND number =" + address.number
             val result = connection!!.createStatement().executeQuery(sql)
             closeConnection()
             while (result.next()) {
                 return true
             }
+            return false
         } catch (e: SQLException) {
+            return false
             e.printStackTrace()
         } finally {
             closeConnection()
         }
-        return false
     }
 
     fun insertAddress(address: Address): Boolean {
         openConnection()
-        var sql = "INSERT INTO Address (street, number, postalCode, addition, city) VALUES (" +
-                "\"" + address.street + "\"," + address.number + ",\"" + address.postalCode + "\","
-        if (address.addition != null) sql += "\'" + address.addition + "\',"
-        else sql += "null,"
-        sql += "\"" + address.city + "\")"
         try {
+            var sql = "INSERT INTO Address (street, number, postalCode, addition, city) VALUES (" +
+                    "\"" + address.street +
+                    "\"," + address.number +
+                    ",\"" + address.postalCode + "\","
+            if (address.addition != null) sql +=
+                    "\'" + address.addition + "\',"
+            else sql += "null,"
+            sql += "\"" + address.city + "\")"
             connection!!.createStatement().execute(sql)
+            return true
         } catch (e: SQLIntegrityConstraintViolationException) {
             return false
         } finally {
             closeConnection()
         }
-        return true
     }
 }
