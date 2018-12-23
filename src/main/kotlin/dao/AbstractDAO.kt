@@ -5,12 +5,12 @@ import java.util.*
 
 abstract class AbstractDAO {
 
-    protected var connection: Connection? = null
-    protected val username = "root"
-    protected val password = "killerfist"
-    protected val database = "KotlinDB"
+    private var connection: Connection? = null
+    private val username = "root"
+    private val password = "killerfist"
+    private val database = "KotlinDB"
 
-    protected fun getConnection() {
+    protected fun openConnection(): Connection? {
         val connectionProps = Properties()
         connectionProps.put("user", username)
         connectionProps.put("password", password)
@@ -22,11 +22,17 @@ abstract class AbstractDAO {
                             ":" + "3306" + "/" +
                             database,
                     connectionProps)
+            return connection
         } catch (ex: SQLException) {
             ex.printStackTrace()
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
+        return null
+    }
+
+    protected fun closeConnection() {
+        if (connection != null) connection!!.close()
     }
 
 }

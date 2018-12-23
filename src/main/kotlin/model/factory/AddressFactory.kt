@@ -14,7 +14,7 @@ class AddressFactory {
     }
 
     private fun validStreet(street: String): Boolean {
-        if (street.length < 200) return true
+        if (street.length < 200 && street.length > 3) return true
         return false
     }
 
@@ -29,7 +29,7 @@ class AddressFactory {
     }
 
     private fun validCity(city: String): Boolean {
-        if (city.length < 200) return true;
+        if (city.length < 200 && city.length > 3) return true;
         return false
     }
 
