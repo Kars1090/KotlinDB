@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: view.TestMenuView
+Test set: model.factory.TestPersonFactory
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.464 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 sec

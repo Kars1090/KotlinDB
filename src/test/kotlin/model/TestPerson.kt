@@ -4,6 +4,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
+import org.mockito.Mockito
 
 class TestPerson {
     private lateinit var person: Person
@@ -22,7 +23,7 @@ class TestPerson {
         assertEquals(lastName, person.lastName)
         assertEquals(email, person.email)
         assertNull(person.phoneNumber)
-        assertNull(person.adress)
+        assertNull(person.address)
     }
 
     @Test
@@ -39,6 +40,14 @@ class TestPerson {
         val newPhoneNumber = "0612345678"
         person.phoneNumber = newPhoneNumber
         assertEquals(newPhoneNumber, person.phoneNumber)
+    }
+
+    @Test
+    fun TestAddAdress() {
+        assertNull(person.address)
+        val mockAdress = Mockito.mock(Address::class.java)
+        person.address = mockAdress
+        assertEquals(mockAdress, person.address)
     }
 
     @Test

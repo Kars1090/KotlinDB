@@ -5,20 +5,20 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 
-class TestAdress {
-    private lateinit var adress: Adress
+class TestAddress {
+    private lateinit var adress: Address
     private val street = "Warnsveldseweg"
     private val number = 60
     private val postalCode = "7200JA"
     private val city = "Zutphen"
 
     @Before
-    fun setupTestAdress() {
-        adress = Adress(street, number, postalCode, city)
+    fun setupTestAddress() {
+        adress = Address(street, number, postalCode, city)
     }
 
     @Test()
-    fun testInitialiseAdress() {
+    fun testInitialiseAddress() {
         assertEquals(street, adress.street)
         assertEquals(number, adress.number)
         assertEquals(postalCode, adress.postalCode)

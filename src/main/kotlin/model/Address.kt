@@ -1,6 +1,6 @@
 package model
 
-class Adress(val street: String, val number: Int, val postalCode: String, val city: String) {
+class Address(val street: String, val number: Int, val postalCode: String, val city: String) {
     var addition: Char? = null
 
     fun toFormattedString(): String {
