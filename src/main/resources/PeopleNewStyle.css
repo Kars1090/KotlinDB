@@ -53,7 +53,7 @@
     -fx-pref-width: 200;
 }
 
-#AdressBox {
+#AddressBox {
     -fx-pref-height: 375;
     -fx-pref-width: 800;
     -fx-alignment: CENTER;
@@ -63,7 +63,7 @@
     -fx-alignment: CENTER;
 }
 
-#AdressFirstLineBox, #AdressSecondLineBox {
+#AddressFirstLineBox, #AddressSecondLineBox {
     -fx-alignment: CENTER;
     -fx-spacing: 20;
 }

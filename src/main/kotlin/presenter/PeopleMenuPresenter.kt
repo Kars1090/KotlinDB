@@ -1,5 +1,7 @@
 package presenter
 
+import dao.AddressDAO
+import model.factory.AddressFactory
 import tornadofx.*
 import util.Alerts
 import view.PeopleMenuView
