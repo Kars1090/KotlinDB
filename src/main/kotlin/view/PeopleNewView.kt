@@ -76,7 +76,7 @@ class PeopleNewView : View() {
     }
 
     private fun setupAddressBox(): VBox {
-        return vbox {id="AdressBox"
+        return vbox {id="AddressBox"
             hbox { id="AddressFirstLineBox"
                 vbox { id = "StreetBox"
                     label { text = "Street:*" }
