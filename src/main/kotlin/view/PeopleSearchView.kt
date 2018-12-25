@@ -6,6 +6,7 @@ import javafx.scene.control.TextField
 import presenter.PeopleSearchPresenter
 import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
+import model.Address
 import model.Person
 import tornadofx.*
 
@@ -22,6 +23,7 @@ class PeopleSearchView : View() {
     private lateinit var fieldAddition: TextField
     private lateinit var fieldPostalCode: TextField
     private lateinit var fieldCity: TextField
+    private lateinit var tableResults: TableView<Person>
     private val people = mutableListOf<Person>().observable()
 
     init {
@@ -39,7 +41,7 @@ class PeopleSearchView : View() {
                 text="Search for adress information"
                 action { buttonSearchAdressClicked() }
             }
-            setupResultBox()
+            tableResults = setupResultBox()
             setupBottomBox()
         }
     }
@@ -51,6 +53,7 @@ class PeopleSearchView : View() {
 
     fun addPersonToList(person: Person) {
         people.add(person)
+        SmartResize.POLICY.requestResize(tableResults)
     }
 
     private fun buttonSearchAdressClicked() {
@@ -143,6 +146,8 @@ class PeopleSearchView : View() {
             readonlyColumn("First Name",Person::firstName)
             readonlyColumn("Last Name",Person::lastName)
             readonlyColumn("Email Address",Person::email)
+            readonlyColumn("Street", Person::address)
+            columnResizePolicy = SmartResize.POLICY
             isEditable = true
         }
     }
