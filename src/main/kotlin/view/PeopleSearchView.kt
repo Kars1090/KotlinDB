@@ -9,6 +9,7 @@ import javafx.scene.layout.VBox
 import model.Address
 import model.Person
 import tornadofx.*
+import util.Alerts
 
 class PeopleSearchView : View() {
     override val root = VBox()
@@ -143,10 +144,14 @@ class PeopleSearchView : View() {
 
     private fun setupResultBox(): TableView<Person> {
         return tableview(people) { id="ResultTable"
-            readonlyColumn("First Name",Person::firstName)
-            readonlyColumn("Last Name",Person::lastName)
-            readonlyColumn("Email Address",Person::email)
-            readonlyColumn("Street", Person::address)
+            column<Person, String>("First Name") { it.value.firstName }
+            column<Person, String>("Last Name") { it.value.lastName }
+            column<Person, String>("Email Name") { it.value.email }
+            readonlyColumn("Street", Person::address).cellFormat { text = it?.street?.value }
+            readonlyColumn("No.", Person::address).cellFormat { text = it?.number?.value.toString() }
+            readonlyColumn("Addition", Person::address).cellFormat { text = it?.addition?.value }
+            readonlyColumn("Postal Code", Person::address).cellFormat { text = it?.postalCode?.value }
+            readonlyColumn("City", Person::address).cellFormat { text = it?.city?.value }
             columnResizePolicy = SmartResize.POLICY
             isEditable = true
         }

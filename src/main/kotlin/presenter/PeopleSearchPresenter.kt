@@ -4,6 +4,7 @@ import dao.PersonDAO
 import tornadofx.*
 import util.Alerts
 import view.PeopleSearchView
+import view.PeopleMenuView
 import java.lang.NumberFormatException
 
 class PeopleSearchPresenter(val view: PeopleSearchView): Controller() {
@@ -31,7 +32,7 @@ class PeopleSearchPresenter(val view: PeopleSearchView): Controller() {
     }
 
     fun backClicked() {
-
+        view.replaceWith(find(PeopleMenuView::class))
     }
 
 }

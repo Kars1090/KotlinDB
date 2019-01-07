@@ -1,12 +1,15 @@
 package model
 
-class Address(val street: String, val number: Int, val postalCode: String, val city: String) {
-    var addition: Char? = null
+import javafx.beans.property.SimpleIntegerProperty
+import javafx.beans.property.SimpleStringProperty
+
+class Address(val street: SimpleStringProperty, val number: SimpleIntegerProperty, val postalCode: SimpleStringProperty, val city: SimpleStringProperty) {
+    val addition = SimpleStringProperty()
 
     fun toFormattedString(): String {
-        var formattedString = street + " " + number.toString()
-        if (addition != null) formattedString += addition
-        formattedString += "\n" + postalCode + " " + city
+        var formattedString = street.value + " " + number.value.toString()
+        if (addition.value != null) formattedString += addition.value
+        formattedString += "\n" + postalCode.value + " " + city.value
         return formattedString
     }
 }

@@ -63,13 +63,13 @@ class PersonDAO: AbstractDAO() {
         val connection = openConnection()
         try {
             var sql = "INSERT INTO Person (firstName, lastName, email, postalCode, number, addition) VALUES (" +
-                    "\"" + person.firstName + "\"," +
-                    "\"" + person.lastName + "\"," +
-                    "\"" + person.email + "\","
+                    "\"" + person.firstName.value + "\"," +
+                    "\"" + person.lastName.value + "\"," +
+                    "\"" + person.email.value + "\","
             if (person.address != null) {
-                sql += "\"" + person.address!!.postalCode + "\"," +
-                        "" + person.address!!.number + ","
-                if (person.address?.addition != null) sql += "\'" + person.address!!.addition + "\'"
+                sql += "\"" + person.address!!.postalCode.value + "\"," +
+                        "" + person.address!!.number.value + ","
+                if (person.address?.addition?.value != null) sql += "\'" + person.address!!.addition.value + "\'"
                 else sql += "null"
             } else sql += "null, null, null"
             sql += ")"

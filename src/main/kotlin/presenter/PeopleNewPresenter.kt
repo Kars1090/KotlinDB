@@ -64,7 +64,7 @@ class PeopleNewPresenter(val view: PeopleNewView) : Controller() {
     }
 
     private fun returnToPeopleMenuView() {
-        view.replaceWith(PeopleMenuView())
+        view.replaceWith(find(PeopleMenuView::class))
     }
 
 }
