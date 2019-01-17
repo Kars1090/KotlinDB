@@ -14,22 +14,22 @@ class TestAddressFactory {
     @Test
     fun testCreateAddress() {
         val address = factory.createAdress(street, number, postalCode, city)
-        assertEquals(street, address?.street)
-        assertEquals(number, address?.number)
-        assertEquals(postalCode, address?.postalCode)
-        assertEquals(city, address?.city)
-        assertNull(address?.addition)
+        assertEquals(street, address!!.street.value)
+        assertEquals(number, address.number.value)
+        assertEquals(postalCode, address.postalCode.value)
+        assertEquals(city, address.city.value)
+        assertNull(address.addition.value)
     }
 
     @Test
     fun testCreateAddressAddition() {
         val addition = 'a'
         val address = factory.createAdress(street, number, postalCode, city, addition)
-        assertEquals(street, address?.street)
-        assertEquals(number, address?.number)
-        assertEquals(postalCode, address?.postalCode)
-        assertEquals(city, address?.city)
-        assertEquals(addition, address?.addition)
+        assertEquals(street, address!!.street.value)
+        assertEquals(number, address.number.value)
+        assertEquals(postalCode, address.postalCode.value)
+        assertEquals(city, address.city.value)
+        assertEquals(addition.toString(), address.addition.value)
     }
 
     @Test

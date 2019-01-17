@@ -16,20 +16,20 @@ class TestPersonFactory {
     @Test
     fun testCreatePerson() {
         val person = factory.createPerson(firstName,lastName,email)
-        assertEquals(firstName, person.firstName)
-        assertEquals(lastName, person.lastName)
-        assertEquals(email, person.email)
-        assertNull(person.phoneNumber)
+        assertEquals(firstName, person.firstName.value)
+        assertEquals(lastName, person.lastName.value)
+        assertEquals(email, person.email.value)
+        assertNull(person.phoneNumber.value)
         assertNull(person.address)
     }
 
     @Test
     fun testCreatePersonPhoneNumber() {
         val person = factory.createPerson(firstName,lastName,email,phoneNumber)
-        assertEquals(firstName, person.firstName)
-        assertEquals(lastName, person.lastName)
-        assertEquals(email, person.email)
-        assertEquals(phoneNumber,person.phoneNumber)
+        assertEquals(firstName, person.firstName.value)
+        assertEquals(lastName, person.lastName.value)
+        assertEquals(email, person.email.value)
+        assertEquals(phoneNumber,person.phoneNumber.value)
         assertNull(person.address)
     }
 
@@ -37,10 +37,10 @@ class TestPersonFactory {
     fun testCreatePersonPhoneAndAdress() {
         val address = Mockito.mock(Address::class.java)
         val person = factory.createPerson(firstName,lastName,email,phoneNumber,address)
-        assertEquals(firstName, person.firstName)
-        assertEquals(lastName, person.lastName)
-        assertEquals(email, person.email)
-        assertEquals(phoneNumber,person.phoneNumber)
+        assertEquals(firstName, person.firstName.value)
+        assertEquals(lastName, person.lastName.value)
+        assertEquals(email, person.email.value)
+        assertEquals(phoneNumber,person.phoneNumber.value)
         assertEquals(address,person.address)
     }
 }

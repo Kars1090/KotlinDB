@@ -20,7 +20,7 @@ class AddressDAO : AbstractDAO() {
                         result.getInt("number"),
                         result.getString("postalCode"),
                         result.getString("city"))
-                if (result.getString("addition") != null) address!!.addition = result.getString("addition")[0]
+                if (result.getString("addition") != null) address!!.addition.value = result.getString("addition")
                 list.add(address!!)
             }
         } catch (e: SQLException) {
@@ -44,7 +44,7 @@ class AddressDAO : AbstractDAO() {
                         result.getInt("number"),
                         result.getString("postalCode"),
                         result.getString("city"))
-                if (result.getString("addition") != null) address!!.addition = result.getString("addition")[0]
+                if (result.getString("addition") != null) address!!.addition.value = result.getString("addition")
                 return address
             }
         } catch (e: SQLException) {
@@ -77,8 +77,8 @@ class AddressDAO : AbstractDAO() {
     fun ifAddressExists(address: Address): Boolean {
         val connection = openConnection()
         try {
-            val sql = "SELECT * FROM Address WHERE postalCode = \"" + address.postalCode +
-                    "\" AND number =" + address.number
+            val sql = "SELECT * FROM Address WHERE postalCode = \"" + address.postalCode.value +
+                    "\" AND number =" + address.number.value
             val result = connection!!.createStatement().executeQuery(sql)
             closeConnection()
             while (result.next()) {
@@ -97,13 +97,13 @@ class AddressDAO : AbstractDAO() {
         val connection = openConnection()
         try {
             var sql = "INSERT INTO Address (street, number, postalCode, addition, city) VALUES (" +
-                    "\"" + address.street +
-                    "\"," + address.number +
-                    ",\"" + address.postalCode + "\","
-            if (address.addition != null) sql +=
-                    "\'" + address.addition + "\',"
+                    "\"" + address.street.value +
+                    "\"," + address.number.value +
+                    ",\"" + address.postalCode.value + "\","
+            if (address.addition.value != null) sql +=
+                    "\'" + address.addition.value + "\',"
             else sql += "null,"
-            sql += "\"" + address.city + "\")"
+            sql += "\"" + address.city.value + "\")"
             connection!!.createStatement().execute(sql)
             return true
         } catch (e: SQLIntegrityConstraintViolationException) {

@@ -1,11 +1,13 @@
 package model
 
-class Person(val firstName: String, val lastName: String, var email: String) {
-    var phoneNumber: String? = null
+import javafx.beans.property.SimpleStringProperty
+
+class Person(val firstName: SimpleStringProperty, val lastName: SimpleStringProperty, val email: SimpleStringProperty) {
+    val phoneNumber = SimpleStringProperty()
     var address: Address? = null
 
     fun getFullNameString(): String {
-        return firstName + " " + lastName
+        return firstName.value + " " + lastName.value
     }
 
     fun interactWith(p: Person): String {
@@ -14,8 +16,8 @@ class Person(val firstName: String, val lastName: String, var email: String) {
 
     fun getInfoString():String {
         var infoString = getFullNameString()
-        infoString += "\n" + email
-        if (phoneNumber != null) infoString += "\n" + phoneNumber
+        infoString += "\n" + email.value
+        if (phoneNumber.value != null) infoString += "\n" + phoneNumber.value
         if (address != null) infoString += "\n" + address!!.toFormattedString()
         return infoString
     }

@@ -1,5 +1,7 @@
 package model
 
+import javafx.beans.property.SimpleIntegerProperty
+import javafx.beans.property.SimpleStringProperty
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Before
@@ -14,33 +16,33 @@ class TestAddress {
 
     @Before
     fun setupTestAddress() {
-        adress = Address(street, number, postalCode, city)
+        adress = Address(SimpleStringProperty(street), SimpleIntegerProperty(number), SimpleStringProperty(postalCode), SimpleStringProperty(city))
     }
 
     @Test()
     fun testInitialiseAddress() {
-        assertEquals(street, adress.street)
-        assertEquals(number, adress.number)
-        assertEquals(postalCode, adress.postalCode)
-        assertEquals(city, adress.city)
-        assertNull(adress.addition)
+        assertEquals(street, adress.street.value)
+        assertEquals(number, adress.number.value)
+        assertEquals(postalCode, adress.postalCode.value)
+        assertEquals(city, adress.city.value)
+        assertNull(adress.addition.value)
     }
 
     @Test
     fun testAddAddition() {
         val newAddition = 'a'
-        assertNull(adress.addition)
-        adress.addition = newAddition
-        assertEquals(newAddition, adress.addition)
+        assertNull(adress.addition.value)
+        adress.addition.value = newAddition.toString()
+        assertEquals(newAddition, adress.addition.value[0])
     }
 
     @Test
     fun testToFormattedString() {
-        assertNull(adress.addition)
+        assertNull(adress.addition.value)
         val formattedString = street + " " + number.toString() + "\n" + postalCode + " " + city
         assertEquals(formattedString, adress.toFormattedString())
         val newAddition = 'a'
-        adress.addition = newAddition
+        adress.addition.value = newAddition.toString()
         val formattedStringWithAddition = street + " " + number.toString() + newAddition + "\n" + postalCode + " " + city
         assertEquals(formattedStringWithAddition, adress.toFormattedString())
     }

@@ -1,13 +1,15 @@
 package model.factory
 
+import javafx.beans.property.SimpleIntegerProperty
+import javafx.beans.property.SimpleStringProperty
 import model.Address
 
 class AddressFactory {
 
     fun createAdress(street: String, number: Int, postalCode: String, city: String, addition: Char? = null): Address? {
         if (validStreet(street) && validNumber(number) && validPostalCode(postalCode) && validCity(city)) {
-            val a = Address(street, number, postalCode, city)
-            if (addition != null) a.addition = addition
+            val a = Address(SimpleStringProperty(street), SimpleIntegerProperty(number), SimpleStringProperty(postalCode), SimpleStringProperty(city))
+            if (addition != null) a.addition.value = addition.toString()
             return a
         }
         return null
