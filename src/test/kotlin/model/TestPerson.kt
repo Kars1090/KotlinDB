@@ -1,9 +1,11 @@
 package model
 
+import javafx.beans.property.SimpleStringProperty
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
+import org.mockito.Mockito
 
 class TestPerson {
     private lateinit var person: Person
@@ -13,32 +15,40 @@ class TestPerson {
 
     @Before
     fun setupTestPerson() {
-        person = Person(firstName, lastName, email)
+        person = Person(SimpleStringProperty(firstName), SimpleStringProperty(lastName), SimpleStringProperty(email))
     }
 
     @Test
     fun testInitialisePerson() {
-        assertEquals(firstName, person.firstName)
-        assertEquals(lastName, person.lastName)
-        assertEquals(email, person.email)
-        assertNull(person.phoneNumber)
-        assertNull(person.adress)
+        assertEquals(firstName, person.firstName.value)
+        assertEquals(lastName, person.lastName.value)
+        assertEquals(email, person.email.value)
+        assertNull(person.phoneNumber.value)
+        assertNull(person.address)
     }
 
     @Test
     fun testChangeEmail() {
-        assertEquals(email, person.email)
+        assertEquals(email, person.email.value)
         val newEmail = "newemail@test.com"
-        person.email = newEmail
-        assertEquals(newEmail, person.email)
+        person.email.value = newEmail
+        assertEquals(newEmail, person.email.value)
     }
 
     @Test
     fun testAddPhoneNumber() {
-        assertNull(person.phoneNumber)
+        assertNull(person.phoneNumber.value)
         val newPhoneNumber = "0612345678"
-        person.phoneNumber = newPhoneNumber
-        assertEquals(newPhoneNumber, person.phoneNumber)
+        person.phoneNumber.value = newPhoneNumber
+        assertEquals(newPhoneNumber, person.phoneNumber.value)
+    }
+
+    @Test
+    fun TestAddAddress() {
+        assertNull(person.address)
+        val mockAddress = Mockito.mock(Address::class.java)
+        person.address = mockAddress
+        assertEquals(mockAddress, person.address)
     }
 
     @Test
@@ -48,7 +58,7 @@ class TestPerson {
 
     @Test
     fun testInteractWith() {
-        val p2 = Person("New","Person","new@email.com")
+        val p2 = Person(SimpleStringProperty("New"),SimpleStringProperty("Person"),SimpleStringProperty("new@email.com"))
         val expected = person.getFullNameString() + " interacted with " + p2.getFullNameString()
         assertEquals(expected, person.interactWith(p2))
     }

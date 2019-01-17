@@ -26,7 +26,7 @@ class TestPeopleNewView : ApplicationTest() {
     @Test
     fun testButtonAddAdress() {
         clickOn("#buttonAddAdress")
-        Mockito.verify(presenter).addAdressClicked()
+        Mockito.verify(presenter).addAddressClicked()
     }
 
     @Test
@@ -38,6 +38,6 @@ class TestPeopleNewView : ApplicationTest() {
     @Test
     fun testButtonAddPerson() {
         clickOn("#buttonAddPerson")
-        Mockito.verify(presenter).addPersonClicked()
+        Mockito.verify(presenter).addPersonClicked("","","","","","","","")
     }
 }

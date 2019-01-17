@@ -1,9 +1,9 @@
 package presenter
 
 import tornadofx.*
-import util.Alerts
 import view.PeopleMenuView
 import view.PeopleNewView
+import view.PeopleSearchView
 
 class PeopleMenuPresenter(val view: PeopleMenuView): Controller() {
 
@@ -12,7 +12,7 @@ class PeopleMenuPresenter(val view: PeopleMenuView): Controller() {
     }
 
     fun findPersonPressed() {
-        Alerts.instance.showWarning("Warning","You clicked Find Person","Not Implemented!")
+        view.replaceWith(PeopleSearchView())
     }
 
 }
